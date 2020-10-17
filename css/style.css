@@ -49,13 +49,15 @@ body {
     color: #777;
     text-transform: uppercase;
     font-family: 'Piedra', sans-serif;
+    animation: fadeIn 2s ease-out;
 
 }
 
 .heading-primary {
     display: block;
     font-size: 70px;
-    letter-spacing: 10px;
+    letter-spacing: 14px;
+    animation: moveUp 2.5s ease-out;
 
 }
 
@@ -63,4 +65,28 @@ body {
     display: block;
     font-size: 30px;
     letter-spacing: 1.7px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(50px);
+    }
+
+    80% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0)
+    }
 }
